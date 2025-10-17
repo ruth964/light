@@ -88,19 +88,23 @@
         button:hover {
             background-color: #005f87;
         }
+        
+      images: circular, responsive, float on wide screens, centered on small screens */
         img {
-      max-width: auto;
-      height: 150px;
-      display: block;
-      margin: 0 auto 1rem;
-      border-radius: 50%;
-        border: 3px solid white;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        align-items: left;
-        justify-content: left;
-        float: left;
-        margin-left: 10px;
-    }
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 0 1rem 0; /* default: stacked with content */
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            float: left;
+            margin-right: 1rem;
+        }
+        @media (max-width: 600px) {
+            img { float: none; margin: 0 auto 1rem auto; }
+        }
+    
         .card {
                 background: white;
                 border-radius: 8px;
@@ -178,6 +182,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
